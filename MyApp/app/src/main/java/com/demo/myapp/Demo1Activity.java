@@ -26,7 +26,6 @@ public class Demo1Activity extends AppCompatActivity implements View.OnClickList
         ivBoss = (ImageView) findViewById(R.id.iv_window);
         ViewPropertyAnimator.animate(ivBoss).setDuration(1);
         ViewPropertyAnimator.animate(ivBoss).alpha(0);
-
     }
 
     @Override
@@ -39,9 +38,9 @@ public class Demo1Activity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()){
             case R.id.btn_click:
                 ivBoss.setVisibility(View.VISIBLE);
-
                 int xValue = rlContainer.getWidth() - ivBoss.getWidth();
                 int yValue = rlContainer.getHeight() - ivBoss.getHeight();
+                //移动到的位置--右下角
                 ViewPropertyAnimator.animate(ivBoss).x(xValue).y(yValue);
                 ivBoss.postDelayed(new Runnable() {
                     @Override
@@ -54,6 +53,7 @@ public class Demo1Activity extends AppCompatActivity implements View.OnClickList
                 ivBoss.setVisibility(View.VISIBLE);
                 int xValue1 = rlContainer.getWidth()/2;
                 int yValue1 = rlContainer.getHeight()/2;
+                //移动到的位置--屏幕中间
                 ViewPropertyAnimator.animate(ivBoss).x(xValue1).y(yValue1);
                 ivBoss.postDelayed(new Runnable() {
                     @Override
@@ -62,7 +62,6 @@ public class Demo1Activity extends AppCompatActivity implements View.OnClickList
                     }
                 },2000);
                 break;
-
         }
     }
 }
