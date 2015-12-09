@@ -7,32 +7,32 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.demo.myapp.MainActivity">
+    tools:context="com.demo.myapp.Demo3Activity">
 
     <Button
-        android:id="@+id/btn_demo1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="ListView"
+        android:id="@+id/btn_listview"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:text="Demo001" />
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:id="@+id/btn_demo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/btn_demo1"
-        android:layout_toRightOf="@+id/btn_demo1"
-        android:text="demo2" />
+        android:text="gradeview"
+        android:id="@+id/btn_gradeview"
+        android:layout_below="@+id/btn_listview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:id="@+id/btn_demo3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/btn_demo2"
-        android:layout_toRightOf="@+id/btn_demo2"
-        android:text="demo3" />
+        android:text="pbView"
+        android:id="@+id/btn_pb"
+        android:layout_below="@+id/btn_gradeview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
