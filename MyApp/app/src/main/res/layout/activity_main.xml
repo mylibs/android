@@ -35,4 +35,13 @@
         android:layout_toEndOf="@+id/btn_demo2"
         android:layout_toRightOf="@+id/btn_demo2"
         android:text="demo3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="004"
+        android:id="@+id/btn_demo4"
+        android:layout_alignTop="@+id/btn_demo3"
+        android:layout_toRightOf="@+id/btn_demo3"
+        android:layout_toEndOf="@+id/btn_demo3" />
 </RelativeLayout>
